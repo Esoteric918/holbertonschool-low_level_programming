@@ -10,15 +10,17 @@ void print_diagonal(int n)
 	int lines = 0;
 
 	if (n > 0)
-		while (lines <= n)
 	{
-		for (p = 0; p < lines; ++p)
+		while (lines <= n)
 		{
-			_putchar(' ');
+			for (p = 0; p < lines; ++p)
+			{
+				_putchar(' ');
+			}
+			_putchar('\\');
+			_putchar('\n');
+			lines++;
 		}
-		_putchar('\\');
-		_putchar('\n');
-		lines++;
 	}
 	else
 	{
