@@ -1,18 +1,19 @@
 #include "holberton.h"
 
 /**
-*_strcpy - copy string 
-*@dest: address pointed to 
-*@src: string being pointed to 
-*Return
+* _strcpy - copy string
+* @dest: address pointed to
+* @src: string being pointed to
+* Return: dest
 */
 char *_strcpy(char *dest, char *src)
 {
 int k = 0;
 
- while ((dest[k] = src[k]) != '\0')
-   {
-     ++k;
-   }
-  return(dest);
+while (src[k] != '\0')
+{
+dest[k] = src[k];
+++k;
+}
+return (dest);
 }
