@@ -17,13 +17,13 @@ int _atoi(char *str)
 	while (str[k] != 0)
 	{
 		if (*str == '-')
-			pu = pu * -1;
+			pu = pu * -1;		
+		if ((*str >= '0') && (*str <= '9'))
+			res = (res * 10) + ((*str) - '0');
+		else if (res > 0)
+			break;
 		str++;
 	}
-	while ((*str >= '0') && (*str <= '9'))
-	{
-		res = (res * 10) + ((*str) - '0');
-		str++;
-	}
+	++k;
 	return (res * pu);
 }
