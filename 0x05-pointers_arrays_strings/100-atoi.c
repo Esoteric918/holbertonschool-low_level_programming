@@ -7,7 +7,7 @@
  */
 int _atoi(char *str)
 {
-	int res;
+	unsigned int res;
 	int pu;
 	int k = 0;
 
@@ -17,7 +17,7 @@ int _atoi(char *str)
 	while (str[k] != 0)
 	{
 		if (*str == '-')
-			pu = pu * -1;		
+			pu = pu * -1;
 		if ((*str >= '0') && (*str <= '9'))
 			res = (res * 10) + ((*str) - '0');
 		else if (res > 0)
