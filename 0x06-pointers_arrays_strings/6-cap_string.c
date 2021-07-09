@@ -11,28 +11,20 @@ char *cap_string(char *str)
 	int i;
 	char *inval = "\n\t ,.?(){}";
 	char chkr[2];
+	int word;
 
 	for (i = 0; str[i]; i++)
 	{
-		if (i == 0)
+		if (word == 0)
 		{
 			if ((str[i] >= 'a' && str[i] <= 'z'))
 				str[i] = str[i] - 32;
-			continue;
+			word = 1;
 		}
-		if (str[i] == ' ')
-		{
-			if (str[i + 1] >= 'a' && str[i + 1] <= 'z')
-			{
-				str[i + 1] = str[i + 1] - 32;
-				continue;
-			}
-		}
-		chkr[0] = *str;
+		chkr[0] = str[i];
 		chkr[1] = '\0';
 		if (strstr(inval, chkr) != 0)
-		{
-		}
+			word = 0;
 	}
-	return (str);
+		return (str);
 }
