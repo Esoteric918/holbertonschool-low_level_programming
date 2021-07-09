@@ -1,15 +1,15 @@
 #include "holberton.h"
 /**
+ * cap_string - cap every word
+ *@str: pointer to string to convert
  *
- *
- *
- *
+ *Return: str
  */
 char *cap_string(char *str)
 {
 	int i;
 
-	for (i=0; str[i]!='\0'; i++)
+	for (i=0; str[i]; i++)
 	{
 		if (i == 0)
 		{
@@ -19,18 +19,12 @@ char *cap_string(char *str)
 		}
 		if (str[i]==' ')
 		{
-			++i;
-			if(str[i]>='a' && str[i]<='z')
+			if(str[i + 1]>= 'a' && str[i + 1]<='z')
 			{
-				str[i]=str[i] - 32;
+				str[i + 1]=str[i + 1] - 32;
 				continue;
 			}
 		}
-		else
-		{
-			if(str[i]>='A' && str[i]<='Z')
-				str[i]=str[i] + 32;
-		}
 	}
-	return (0);
+	return (str);
 }
