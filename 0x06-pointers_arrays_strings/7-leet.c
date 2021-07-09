@@ -1,10 +1,9 @@
 #include "holberton.h"
 /**
+ * leet - replace char with int
+ *@str: string
  *
- *
- *
- *
- *
+ *Return: 0
  */
 char *leet(char *str)
 {
