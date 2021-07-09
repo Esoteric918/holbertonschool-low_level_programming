@@ -1,9 +1,9 @@
 #include "holberton.h"
 /**
+ * string_toupper - make str caps
+ *@len: points to array
  *
- *
- *
- *
+ *Return: 0
  */
 char *string_toupper(char *len)
 {
