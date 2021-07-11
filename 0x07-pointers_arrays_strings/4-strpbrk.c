@@ -6,7 +6,7 @@
  *@s: pointer
  *@accept: string
  *
- * Return: char
+ * Return: char pointer s
  */
 char *_strpbrk(char *s, char *accept)
 {
@@ -29,5 +29,5 @@ char *_strpbrk(char *s, char *accept)
 		}
 		s++;
 	}
-	return (s);
+	return (NULL);
 }
