@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
  * print_chessboard - prints out a 8x8 board of chars
- * @arr: str to search
+ * @a: str to search
  * Return: void
  */
 void print_chessboard(char (*a)[8])
