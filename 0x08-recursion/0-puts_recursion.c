@@ -1,9 +1,9 @@
 #include "holberton.h"
 /**
+ * _puts_recursion - print string recursively
+ *@s: string pointer
  *
- *
- *
- *
+ *Return: nothing
  */
 void _puts_recursion(char *s)
 {
