@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * _puts_recursion - print string recursively
+ * _print_rev_recursion - print  rev string recursively
  *@s: string pointer
  *
  *Return: nothing
