@@ -4,7 +4,7 @@
 /**
  * main - finds value in argv
  *@argc: counts the arguments
- *@argc: argument vectors
+ *@argv: argument vectors
  *Return: 0
  */
 int main(int argc, char *argv[])
