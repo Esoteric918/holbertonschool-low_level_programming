@@ -22,12 +22,12 @@ int main(int argc, char *argv[])
 	if (atoi(argv[1]) < 0)
 	{
 		printf("0\n");
-		return(0);
+		return (0);
 	}
 	for (i = 0; argv[1][i]; ++i)
 	{
 		if (!isdigit(argv[1][i]))
-			return(1);
+			return (1);
 	}
 	sum = (atoi(argv[1]) / 25);
 	cent = (atoi(argv[1]) % 25);
@@ -40,5 +40,5 @@ int main(int argc, char *argv[])
 	sum += cent;
 
 	printf("%d\n", sum);
-	return(0);
+	return (0);
 }
