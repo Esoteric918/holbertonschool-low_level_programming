@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 /**
- * str_concat
+ * str_concat - concatenates two strings
  *@s1: string to be pointed in memory
  *@s2: string string to be be canted
  *
