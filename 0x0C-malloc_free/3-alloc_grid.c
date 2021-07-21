@@ -24,7 +24,7 @@ int **alloc_grid(int width, int height)
 	}
 	for (r = 0; r < height; ++r)
 	{
-		ray[r] = malloc(sizeof(int *) * height);
+		ray[r] = malloc(sizeof(int) * height);
 		if (ray[r] == NULL)
 		{
 			for (c = 0;c < r; ++c)
@@ -32,11 +32,8 @@ int **alloc_grid(int width, int height)
 			free(ray);
 			return (NULL);
 		}
-		for (r = 0; r < height; ++r)
-		{
-			for (c = 0; c < width; ++c)
-				ray[r][c] = 0;
-		}
+		for (c = 0; c < width; ++c)
+			ray[r][c] = 0;
 	}
 	return (ray);
 }
