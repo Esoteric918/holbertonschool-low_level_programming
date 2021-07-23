@@ -3,7 +3,7 @@
 
 /**
  * malloc_checked - check proper use of malloc
- *@b int used to check
+ *@b: int used to check
  *
  *Return: NULL
  */
@@ -14,6 +14,6 @@ void *malloc_checked(unsigned int b)
 	ptr = malloc(b);
 
 	if (ptr == NULL)
-		return (ptr);
-	exit(98);
+		exit(98);
+	return (ptr);
 }
