@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * _calloc - call to mem from malloc
+ * calloc - call to mem from malloc
  *@nmemb: int  number of bytes
  *@size: size of bytes
  *
