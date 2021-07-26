@@ -1,5 +1,4 @@
 #include "dog.h"
-#include <stdlib.h>
 #include <stdio.h>
 /**
  * print_dog - prnt objects in strc dog
@@ -19,7 +18,7 @@ void print_dog(struct dog *d)
 		printf("Age: %f \n", d->age);
 	}
 	if (d->owner == NULL)
-		printf ("Owner: (nil)\n");
+		printf("Owner: (nil)\n");
 	else
-		printf("Owner: %s\n",d->owner);
+		printf("Owner: %s\n", d->owner);
 }
