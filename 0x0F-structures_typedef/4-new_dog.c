@@ -21,8 +21,12 @@ char *_strdup(char *src)
 	if (str == NULL)
 		return (NULL);
 	p = str;
-	while (*str)
-		*p++ = *src++;
+	while (*src)
+	{
+		*p = *src;
+		++p;
+		++src;
+	}
 	*p = '\0';
 	return (str);
 }
