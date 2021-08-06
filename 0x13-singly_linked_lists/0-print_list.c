@@ -1,6 +1,5 @@
 #include "lists.h"
 
-
 /**
  * print_list - prints  nodes stored
  * @h: pointer to node list
