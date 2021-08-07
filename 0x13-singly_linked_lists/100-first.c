@@ -3,7 +3,7 @@
 void Tortoise_Hire(void)__attribute__((constructor));
 
 /**
- * Tortoise_hire -returns before main
+ * Tortoise_Hire -returns before main
  *
  */
 void Tortoise_Hire(void)
