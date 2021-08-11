@@ -1,10 +1,9 @@
 #include "lists.h"
 
 /**
- *
- *
- *
- *
+ * listint_len - prints data in struct
+ * @h: ptr to head
+ *Return: count
  */
 size_t listint_len(const listint_t *h)
 {
