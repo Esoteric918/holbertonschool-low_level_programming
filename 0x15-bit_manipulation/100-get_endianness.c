@@ -2,7 +2,6 @@
 
 /**
  * get_endianness - finds endian
- * 
  *Returns: int
  */
 int get_endianness(void)
