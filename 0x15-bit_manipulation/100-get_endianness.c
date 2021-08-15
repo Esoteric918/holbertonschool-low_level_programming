@@ -2,7 +2,7 @@
 
 /**
  * get_endianness - finds endian
- * test for git
+ * 
  *Returns: int
  */
 int get_endianness(void)
