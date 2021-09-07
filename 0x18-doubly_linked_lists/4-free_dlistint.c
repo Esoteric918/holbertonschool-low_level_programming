@@ -1,9 +1,7 @@
 #include "lists.h"
 /**
- *
- *
- *
- *
+ * free_dlistint - frees ptrs in link list
+ * @head: ptr to head of list
  *
  */
 void free_dlistint(dlistint_t *head)
