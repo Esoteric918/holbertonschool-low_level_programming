@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 #include "lists.h"
 
 /**
@@ -16,3 +18,4 @@ size_t listint_len(const listint_t *h)
 	}
 	return (count);
 }
+>>>>>>> 7d5eea3ab23733cc53d9bd075b9d097118711581
