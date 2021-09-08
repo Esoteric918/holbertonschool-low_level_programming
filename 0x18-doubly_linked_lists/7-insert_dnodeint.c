@@ -3,6 +3,7 @@
  * insert_dnodeint_at_index - insert node at given location
  * @h: prt to ptr of head
  * @idx: index of the list where the new node should be added
+ * @n: Integer stored in new_dl
  * Return: the address of the new node, or NULL if it failed
  *
  */
@@ -43,5 +44,8 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		new->n = n;
 		*h = new;
 	}
+	if (new->next != NULL)
+		new->next->prev = new;
+	temp->next = new;
 	return (new);
 }
