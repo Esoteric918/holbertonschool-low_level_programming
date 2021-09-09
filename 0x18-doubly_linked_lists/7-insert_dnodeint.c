@@ -3,7 +3,7 @@
  * insert_dnodeint_at_index - insert node at given location
  * @h: prt to ptr of head
  * @idx: index of the list where the new node should be added
- * @n: Integer stored in new_dl
+ * @n: Integer stored in new
  * Return: the address of the new node, or NULL if it failed
  *
  */
