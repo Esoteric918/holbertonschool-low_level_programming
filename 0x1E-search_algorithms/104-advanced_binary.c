@@ -1,6 +1,6 @@
 #include "search_algos.h"
 /**
- * binary_search - searches for a val in a sorted arr with a Binary algo
+ * advanced_binary - searches for a val in a sorted arr with a Binary algo
  * @array: Array to search
  * @size: size of array
  * @value: Int to search in array
